@@ -33,6 +33,7 @@
     "@iconify-json/vscode-icons": "^1.1.12",
     "@vitejs/plugin-vue": "^2.3.3",
     "autoprefixer": "^10.4.7",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.5",
     "esbuild": "^0.15.15",
     "eslint": "^7.32.0",
