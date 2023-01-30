@@ -1,48 +1,33 @@
 <template>
   <main>
-    <div class="px-5">
-      <div
-        class="
-          flex justify-between
-        "
-      >
-        <div class="flex gap-2 text-gray-400">
-          <router-link
-            to="/"
-            active-class="
-              font-bold
-              text-gray-700 dark:text-gray-300
-            "
-          >
-            Home
-          </router-link>
+    <header
+      class="
+        lg:px-5
+        h-[72px]
+        flex items-center
+      "
+    >
+      <div class="flex items-center gap-2">
+        <div class="relative">
+          <div class="exact-wh-[50px] overflow-hidden rounded-full">
+            <img
+              class="object-cover"
+              src="https://images.pexels.com/photos/15186505/pexels-photo-15186505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            >
+          </div>
 
-          <router-link
-            to="/about"
-            active-class="
-              font-bold
-              text-gray-700 dark:text-gray-300
-            "
-          >
-            About
-          </router-link>
+          <div class="exact-wh-[10px] bg-green-400 absolute bottom-[2px] right-[2px] rounded">
+          </div>
         </div>
 
-        <base-theme-toggle />
+        <h1 class="block text-black no-underline font-bold text-xl lg:text-3xl font-extrabold leading-none lg:leading-tight">
+          Jeash
+        </h1>
       </div>
-
-      <div
-        class="
-          divider
-          h-[1px]
-          my-5
-          bg-gray-300 dark:gray-700
-        "
-      ></div>
-
-      <div class="h-[300px] w-[500px]">
-        <RouterView />
-      </div>
+    </header>
+    <div class="px-5">
+      <RouterView />
     </div>
   </main>
 </template>
